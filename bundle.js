@@ -27,7 +27,8 @@ module.exports = (function() {
      */
     getGravatarURL: function(email, size, cb, tryNext )
     {
-      var base = 'gravatar.com/avatar/<%=id%>?s=<%=size%>&d=404';
+     // var base = 'gravatar.com/avatar/<%=id%>?s=<%=size%>&d=404';
+      var base = 'gravatar.com/avatar/<%=id%>?s=<%=size%>';
 
       // if email does not contain @ it's already an MD5 hash
       if( email.indexOf('@') > -1 )
