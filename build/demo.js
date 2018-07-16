@@ -734,7 +734,8 @@ var _initialiseProps = function _initialiseProps() {
 
         var email = props.md5Email || (0, _md2.default)(props.email);
         var size = IS_RETINA ? props.size * 2 : props.size;
-        var url = 'https://secure.gravatar.com/avatar/' + email + '?s=' + size + '&d=404';
+        //var url = 'https://secure.gravatar.com/avatar/' + email + '?s=' + size + '&d=404';
+	var url = 'https://secure.gravatar.com/avatar/' + email + '?s=' + size;
 
         setState({ src: url });
     };
