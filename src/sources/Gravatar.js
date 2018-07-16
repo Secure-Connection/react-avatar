@@ -19,9 +19,13 @@ class GravatarSource {
         const { props } = this;
         const email = props.md5Email || md5(props.email);
         const size = props.size;
-        const url = `https://secure.gravatar.com/avatar/${email}?s=${size}&d=404`;
-        const setUrl = `https://secure.gravatar.com/avatar/${email}?s=${size * 2}&d=404`;
+        
+    //    const url = `https://secure.gravatar.com/avatar/${email}?s=${size}&d=404`;
+    //    const setUrl = `https://secure.gravatar.com/avatar/${email}?s=${size * 2}&d=404`;
 
+        const url = `https://secure.gravatar.com/avatar/${email}?s=${size}`;
+        const setUrl = `https://secure.gravatar.com/avatar/${email}?s=${size * 2}`;        
+        
         setState({src: url, srcSet:setUrl});
     }
 }
